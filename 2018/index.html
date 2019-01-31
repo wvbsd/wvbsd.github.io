@@ -1,0 +1,633 @@
+<!doctype html>
+<style type="text/css">
+.ms-list2-main {
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom: 1.5pt solid gray;
+}
+.ms-list2-tl {
+	font-weight: bold;
+	color: white;
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom: .75pt solid black;
+	background-color: #008078;
+}
+.ms-list2-left {
+	border-style: none;
+}
+.ms-list2-top {
+	font-weight: bold;
+	color: white;
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom: .75pt solid black;
+	background-color: #008078;
+}
+.ms-list2-even {
+	font-weight: normal;
+	color: black;
+	border-style: none;
+	background-color: white;
+}
+.ms-list2-odd {
+	font-weight: normal;
+	color: black;
+	border-style: none;
+	background-color: #EFFFEF;
+}
+.auto-style1 {
+	font-size: small;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.normalp {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-style: normal;
+	font-variant: normal;
+}
+a:link
+	{font-family:"Times New Roman",serif;
+	color:black;
+	text-decoration:underline;
+	text-underline:single;
+}
+.auto-style10 {
+	font-size: medium;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.auto-style11 {
+	font-size: medium;
+}
+.auto-style12 {
+	font-family: Arial;
+}
+.auto-style13 {
+	font-size: medium;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+.auto-style14 {
+	font-weight: normal;
+	color: #008080;
+}
+.auto-style15 {
+	font-size: medium;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-align: center;
+}
+.auto-style16 {
+	font-weight: normal;
+}
+.auto-style17 {
+	font-weight: bold;
+}
+.auto-style28 {
+	font-family: Arial;
+	text-align: center;
+}
+.auto-style29 {
+	border-width: 8px;
+	text-align: center;
+}
+.auto-style30 {
+	border-color: #FFFFFF;
+	border-width: 0;
+}
+.auto-style31 {
+	font-size: large;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.auto-style38 {
+	border-style: none;
+	background-color: #FFFFFF;
+}
+.auto-style39 {
+	color: #000000;
+}
+.auto-style40 {
+	font-size: medium;
+	color: #000000;
+}
+.auto-style41 {
+	font-size: medium;
+	color: #000000;
+	border-style: none;
+}
+.auto-style42 {
+	font-size: medium;
+	border-style: none;
+	background-color: #FFFFFF;
+}
+.auto-style43 {
+	font-size: medium;
+	color: #000000;
+	border-style: none;
+	background-color: #FFFFFF;
+}
+.auto-style44 {
+	font-weight: bold;
+	color: white;
+	font-size: medium;
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom: .75pt solid black;
+	background-color: #008078;
+}
+</style>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VBSD 2018</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12283443-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-12283443-7');
+</script>
+</head>
+
+<body>
+<!-- header section -->
+<section class="banner" role="banner">
+  
+  <!-- banner text -->
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="banner-text text-center">
+        <h1>Vision with Biased or Scarce Data </h1>
+        <p>VBSD 2018<br>
+          in conjunction with CVPR 2018</p>
+        <!-- banner text --> 
+      </div>
+    </div>
+  </div>
+</section>
+<!-- header section --> 
+<!-- description text section -->
+<section id="descripton" class="section descripton">
+  <div class="container">
+    <div class="normalp">
+      <p class="auto-style15">&nbsp;</p>
+		<p class="auto-style13">The performance of vision algorithms on many key problems that were once considered hard is now astounding (e.g. object detection and categorization). In many cases however, significant amounts of data are necessary to achieve high performance. We would like to focus on problem domains where insufficient raw data is available for designing and training a system. We see scarcity of data in light of the task specific objective function, as well as the underlying distributions of the natural prior and the data sampling prior. As a concrete example from autonomous driving, one can generate a potentially infinite amount of simulated data for training by using game engines. This may nevertheless miss unlikely situations that have not been explicitly modeled (such as a paper bag being blown on the road: is it an obstacle worthy of action?) Sometimes it may even be difficult to just detect that the available data is scarce with respect to an objective function. With the ever-increasing pervasiveness of vision algorithms in the real-world this becomes an important point to consider.<br><br>
+      
+      The topic of scarce data has been and is continuously being covered in the ML and adjoining communities, for instance in transfer learning. From an ML perspective we feel that vision still has a special place when it comes to explaining observed data due to the vast amount of potential prior knowledge (e.g. the separation of appearance and geometry) and data generation models (e.g. computer graphics) available. Accordingly, we are looking for unique opportunities for computer vision in modeling data and algorithms under bias or scarcity. Towards this we pose the following questions:
+        </p>
+            <ul class="auto-style13">
+              <li class="auto-style31">When is data scarce or biased?</li>
+              <li class="auto-style31">How can we detect bias or scarcity 
+			  in data?</li>
+              <li class="auto-style31">How can we improve and evaluate 
+			  performance under bias <span lang="en-us">or</span> scarcity?</li>
+            </ul>
+     <p>
+     <span lang="en-us">&nbsp;&nbsp; </span>
+    </p>
+    </div>
+     <div class="auto-style1">
+          
+         <span lang="en-us">
+		           
+      <h2 class="auto-style14">P<span class="auto-style17">rogram</span></h2>
+		 <span lang="en-us">
+      	 <p>&nbsp;</p>
+      <ul>
+		  <li class="auto-style11"><strong>Date</strong>: June 22, 2018</li>
+		  <li class="auto-style11"><strong>Start Time</strong>: 08:30 - 17:00</li>
+		  <li class="auto-style11"><strong>Room</strong>: 251-B</li>
+		  </span>
+    </ul>
+    			 <p class="auto-style14">&nbsp;</p>
+		 <p>
+		 <table style="width: 100%; height: 674px;" class="ms-list2-main">
+			 <!-- fpstyle: 25,011111100 -->
+			 <tr>
+		  <td class="auto-style44" style="height: 64px; width: 108px;">
+		  <strong>Start Time</strong></td>
+				 <td class="auto-style44" style="height: 64px; width: 629px">
+		 		 <strong>Title</strong></td>
+				 <td class="auto-style44" style="height: 64px">
+		 		 <strong>Speaker / Author(s)</strong></td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style38" style="width: 108px; height: 28px;">
+		  &nbsp;</td>
+				 <td class="ms-list2-even" style="width: 629px; height: 28px;">
+		 		 &nbsp;</td>
+				 <td class="ms-list2-even" style="height: 28px">
+		 		 &nbsp;</td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style43" style="width: 108px; height: 36px;">
+		 <span lang="en-us" class="auto-style40">
+      	08:45</td>
+				 <td class="ms-list2-even" style="width: 629px; height: 36px;">
+		 <span lang="en-us" class="auto-style11">
+		 		Welcome, Introductory Remarks</td>
+				 <td class="ms-list2-even" style="height: 36px">
+		 <span lang="en-us" class="auto-style11">
+      		   Jan Ernst (Siemens)</td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style43" style="height: 36px; width: 108px;">
+		 <span lang="en-us" class="auto-style40">
+      	09:10</td>
+				 <td class="ms-list2-even" style="height: 36px; width: 629px">
+				 <span lang="en-us" class="auto-style11">
+		 		 Keynote: Human-Machine Collaboration for Large-Scale Image Annotation</td>
+				 <td class="ms-list2-even" style="height: 36px">
+		 <span lang="en-us" class="auto-style11">
+      		   Vittorio Ferrari 
+				 (Google Research)</td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style43" style="height: 36px; width: 108px;">
+		 <span lang="en-us" class="auto-style40">
+      	09:45</td>
+				 <td class="ms-list2-even" style="height: 36px; width: 629px">
+		 		 <span lang="en-us" class="auto-style11">
+      		   Keynote<span>: Making Your Data Count: Sharing Information Across 
+				 Domains and Tasks</span></span></td>
+				 <td class="ms-list2-even" style="height: 36px">
+		 <span lang="en-us" class="auto-style11">
+      		   Judy Hoffman (UC Berkeley)</td>
+			 </tr>
+			 <tr class="ms-list2-odd">
+		  <td class="auto-style42" style="height: 60px; width: 108px;">
+		 <span lang="en-us" class="auto-style11">
+      	10:20</td>
+				 <td class="ms-list2-odd" style="height: 60px; ">
+		 <span lang="en-us" class="auto-style11">
+      		   Coffee Break and 
+				 Poster Session</td>
+				 <td class="ms-list2-odd" style="height: 60px; ">
+		 		&nbsp;</td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style43" style="height: 36px; width: 108px;">
+		 <span lang="en-us" class="auto-style40">
+      	10:50</td>
+				 <td class="ms-list2-even" style="height: 36px; width: 629px">
+		 <span lang="en-us" class="auto-style11">
+      		   Markov Chain Neural Networks</td>
+				 <td class="ms-list2-even" style="height: 36px">
+		 <span lang="en-us" class="auto-style11">
+				 Maren Awiszus, Bodo Rosenhahn</td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style43" style="width: 108px; height: 36px;">
+		 <span lang="en-us" class="auto-style40">
+		  11:10</td>
+				 <td class="ms-list2-even" style="width: 629px; height: 36px;">
+		 <span lang="en-us" class="auto-style11">
+      		   A Generative 
+				 Model for Zero Shot Learning Using Conditional Variational 
+				 Autoencoders</td>
+				 <td class="ms-list2-even" style="height: 36px">
+		 <span lang="en-us" class="auto-style11">
+      		   Ashish Mishra, Shiva Krishna 
+				 Reddy, Anurag Mittal, Hema Murthy</td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style43" style="width: 108px; height: 36px;">
+		 <span lang="en-us" class="auto-style40">
+      	11:30</td>
+				 <td class="ms-list2-even" style="width: 629px; height: 36px;">
+		 <span lang="en-us" class="auto-style11">
+      		   Endoscope Navigation and 3D Reconstruction of 
+				 Oral Cavity by Visual SLAM with Mitigated Data Scarcity</td>
+				 <td class="ms-list2-even" style="height: 36px">
+		 <span lang="en-us" class="auto-style11">
+      		   Liang Qiu, Hongliang Ren</td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style43" style="height: 60px; width: 108px;">
+		 <span lang="en-us" class="auto-style40">
+      	11:50</td>
+				 <td class="ms-list2-odd" style="height: 60px; width: 629px">
+		 <span lang="en-us" class="auto-style11">
+				 Lunch Break</td>
+				 <td class="ms-list2-odd" style="height: 60px">
+		 		 </td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style41" style="height: 37px; width: 108px;">
+		 <span lang="en-us" class="auto-style40">
+      	13:20</td>
+				 <td class="ms-list2-even" style="width: 629px; height: 37px;">
+		 <span lang="en-us" class="auto-style11">
+      		   Keynote: Sparsity and Scarcity in the Automotive Domain</td>
+				 <td class="ms-list2-even" style="height: 37px">
+		 <span lang="en-us" class="auto-style11">
+      		   Jonas Uhrig (Daimler AG & University of Freiburg)</td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style41" style="width: 108px; height: 37px;">
+		 <span lang="en-us" class="auto-style40">
+      	13:55</td>
+				 <td class="auto-style40" style="width: 629px; height: 37px;">
+		 <span lang="en-us" class="auto-style39">
+      		   Keynote: How to satisfy the Thirst for Data?</td>
+				 <td class="auto-style11" style="height: 37px">
+		 <span lang="en-us" class="auto-style39">
+      		   Andreas Geiger (University of T&uuml;bingen &amp; MPI-IS)</td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style41" style="width: 108px; height: 37px;">
+		 <span lang="en-us" class="auto-style40">
+      	14:30</td>
+				 <td class="auto-style40" style="width: 629px; height: 37px;">
+		 <span lang="en-us" class="auto-style39">
+      		   Detecting Anomalous Faces with &quot;No Peeking&quot; Autoencoders</td>
+				 <td class="auto-style11" style="height: 37px">
+		 <span lang="en-us" class="auto-style39">
+      		   Anand Bhattad, Jason Rock, David Forsyth</td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style41" style="height: 60px; width: 108px;">
+		 <span lang="en-us" class="auto-style40">
+      	14:50</td>
+				 <td class="ms-list2-odd" style="height: 60px; width: 629px">
+		 <span lang="en-us" class="auto-style11">
+				 Coffee Break and Poster Session</td>
+				 <td class="ms-list2-odd" style="height: 60px">
+		 		 </td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style41" style="width: 108px; height: 37px;">
+		 <span lang="en-us" class="auto-style40">
+      	15:30</td>
+				 <td class="ms-list2-even" style="width: 629px; height: 37px;">
+		 <span lang="en-us" class="auto-style11">
+      		   Keynote: </span><span class="auto-style11">Three Approaches to Training Object and Activity Detectors with Less Annotation</span></td>
+				 <td class="ms-list2-even" style="height: 37px">
+		 <span lang="en-us" class="auto-style11">
+      		   Jeff Siskind (Purdue)</td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style41" style="width: 108px; height: 37px;">
+		 <span lang="en-us" class="auto-style40">
+		  16:05</td>
+				 <td class="auto-style40" style="width: 629px; height: 37px;">
+		 <span lang="en-us" class="auto-style39">
+      		   Keynote: Fairness in Computer 
+				 Vision</td>
+				 <td class="auto-style11" style="height: 37px">
+		 <span lang="en-us" class="auto-style39">
+      		   Olga Russakovsky (Princeton)</td>
+			 </tr>
+			 <tr>
+		  <td class="auto-style41" style="width: 108px; height: 37px;">
+		 <span lang="en-us" class="auto-style40">
+      	16:40</td>
+				 <td class="auto-style40" style="width: 629px; height: 37px;">
+		 <span lang="en-us" class="auto-style39">
+      		   Concluding Remarks</td>
+				 <td class="auto-style11" style="height: 37px">
+		 <span lang="en-us" class="auto-style39">
+				 Jan Ernst</td>
+			 </tr>
+			 <tr>
+		  <td class="ms-list2-left" style="width: 108px; height: 29px;">
+		  &nbsp;</td>
+				 <td class="ms-list2-even" style="width: 629px; height: 29px;">
+		 		 &nbsp;</td>
+				 <td class="ms-list2-even" style="height: 29px">
+		 		 &nbsp;</td>
+			 </tr>
+		 </table>
+		 </p>
+		           
+      <h2 class="auto-style14">&nbsp;</h2>
+		 <h2 class="auto-style14"><span class="auto-style17">Keynote Speakers</span></h2>
+		 <p class="auto-style14">&nbsp;</p>
+		 <p>
+		 <table style="width: 90%; height: 345;" align="center" cellspacing="1" class="auto-style30">
+			 <tr>
+				 <td class="auto-style29" style="width: 15%; height: 340;" valign="top"> 
+      		     <a href="https://avg.is.tuebingen.mpg.de/person/ageiger" style="text-decoration: none"> 
+      		     <img alt="" height="156" src="images/AGeiger.jpg" width="140" align="top"><br>
+				 <span class="auto-style13"><br><strong>Andreas Geiger</strong><br>University of 
+				 T&uuml;bingen &amp; MPI-IS</span></a></td>
+				 <td class="auto-style29" style="width: 2%; height: 340;" valign="top"> 
+      		     &nbsp;</td>
+				 <td class="text-center" style="width: 15%; height: 340;" valign="top"> 
+          
+        		           
+		 		 <a href="http://homepages.inf.ed.ac.uk/vferrari/" style="text-decoration: none">
+				 <img alt="" height="156" src="images/VFerrari.jpg" width="140"><br>
+				 <span class="auto-style13"><br><strong>Vittorio Ferrari
+				 </strong><br>Google 
+				 Research</span></a></td>
+	 
+				 <td class="text-center" style="width: 2%; height: 340;" valign="top"> 
+      		     &nbsp;</td>
+				 <td class="auto-style28" style="height: 340; width: 15%;" valign="top">
+		 		 <a href="http://www.cs.princeton.edu/~olgarus/" style="text-decoration: none">
+				 <img alt="" height="156" src="images/ORussakovsky.JPG" width="140"><br>
+				 <span class="auto-style13"><br><strong>Olga Russakovsky<br>
+				 </strong>Princeton 
+				 University</span></a><span class="auto-style11"><br>&nbsp;</span></td>
+				 <td class="auto-style28" style="height: 340; width: 2%;" valign="top">
+		 		 &nbsp;</td>
+				 <td class="auto-style28" style="height: 340; width: 15%;" valign="top">
+		 		 <span class="auto-style13"><span lang="en-us">
+		           
+      		   <a href="https://lmb.informatik.uni-freiburg.de/people/uhrigj/" style="text-decoration: none"> 
+      		     <img alt="" height="156" src="images/JUhrig.jpg" width="140" align="top"><br>
+				 <br><span class="auto-style13" lang="en-us"><strong>Jonas Uhrig</strong></span><br>
+				 <span class="auto-style13" lang="en-us">Daimler AG &amp;<br>University 
+				 of Freiburg</span></a></span><br>&nbsp;</span></td>
+				 <td class="auto-style28" style="height: 340; width: 2%;" valign="top">
+		 		 &nbsp;</td>
+				 <td class="auto-style28" style="height: 340; width: 15%;" valign="top">
+		 		 <a href="https://engineering.purdue.edu/~qobi/" style="text-decoration: none">
+				 <img alt="" height="156" src="images/JSiskind.jpg" width="140"><br>
+				 <span class="auto-style13"><br><strong>Jeffrey Siskind
+				 </strong><br>Purdue 
+				 University</span></a></td>
+		 
+				 <td class="auto-style28" style="height: 340; width: 2%;" valign="top">
+		 		 &nbsp;</td>
+				 <td class="auto-style28" style="height: 340; width: 15%;" valign="top">
+		 		 <a href="https://people.eecs.berkeley.edu/~jhoffman/" style="text-decoration: none">
+				 <img alt="" height="156" src="images/JHoffman.jpg" width="140"><br>
+				 <span class="auto-style13"><br><strong>Judy Hoffman
+				 </strong><br>UC Berkeley</span></a></td>
+			 </tr>
+		 </table>
+		 </p>
+	     <p>&nbsp;</p>
+          
+      <h2 class="auto-style14"><strong>Call for Papers</strong></h2>
+		 <h2 class="auto-style10"><span class="auto-style16">Call for Papers in PDF can be downloaded</span> 
+		<a class="auto-style10" href="docs/CfP_VBSD2018.pdf" style="text-decoration:none">
+		 <span class="auto-style10"><strong>here</strong></span> </a></h2>
+		 <p class="auto-style13"><span>We solicit submissions that address any 
+		 of the above questions as well as the following topics:</span></p>
+		 <ul class="auto-style13">
+			 <li class="auto-style10">Modeling data and learning from 
+			 inhomogeneous input</li>
+			 <li class="auto-style10">Structured and unstructured prior knowledge 
+			 (e.g. language, multi-modality)</li>
+			 <li class="auto-style10">Combining domain-related and unrelated data 
+			 and priors</li>
+			 <li class="auto-style10">Generative modeling for augmenting 
+			 synthetic and real data</li>
+			 <li class="auto-style10">Converging rendering and inference (e.g. 
+			 combine partial inference with partial synthesis)</li>
+			 <li class="auto-style10">Prior models for latent distributions that 
+			 explain and generate images and videos</li>
+			 <li class="auto-style10">Automation of data and prior exploration 
+			 with minimal human-in-the-loop</li>
+			 <li class="auto-style10">Design and evaluation of vision algorithms 
+			 and systems under data scarcity</li>
+			 <li class="auto-style10">Detecting and quantifying bias and scarcity 
+			 in data</li>
+			 <li class="auto-style10">Principled combinations of prior knowledge 
+			 and learnt representations</li>
+			 <li class="auto-style10">Detecting and avoiding overfitting</li>
+			 <li class="auto-style10">Modeling and understanding generalization 
+			 behavior with scarce data</li>
+		 </ul>
+		 <p class="MsoNormal">&nbsp;</p>
+		 <p class="MsoNormal"><b><span>Submission instructions</span></b><span>: 
+		 &nbsp;</span></p>
+      <ul class="auto-style13">
+        <li class="auto-style10">
+		Each submitted paper must be no longer than 8 pages excluding references. Please refer to <a class="auto-style10" href="http://cvpr2018.thecvf.com/submission/main_conference/author_guidelines#call_for_papers" style="text-decoration:none">
+		<span class="auto-style10"><strong>CVPR Author Guideline</strong></span></a></li>
+        <li class="auto-style10">Please submit papers at 
+		<a class="auto-style10" href="https://cmt3.research.microsoft.com/VBSD2018" style="text-decoration:none">
+		<span class="auto-style10"><strong>CMT</strong></span></a></li>
+
+    </ul>
+		 
+		 
+		 <p class="MsoNormal">&nbsp;</p>
+		 <p class="MsoNormal"><b><span>Important dates</span></b><span> (all 
+		 deadlines 11:59 PM PST):<o:p></o:p></span></p>
+		 <ul class="auto-style13">
+			 <li class="auto-style10">
+			 <strike>Submission deadline:  2018 April 6, 2018</strike></li>
+			 <li class="auto-style10">
+			 <strike>Decision notification: April 13, 2018</strike></li>
+			 <li class="auto-style10">
+			 <strike>Final version submission: April 20, 2018</strike></li>
+			 <li class="auto-style10">
+			 Workshop day: June 22, 2018</li>
+		 </ul>
+		           
+         <p>&nbsp;</p>
+		 <p><span lang="en-us">
+		           
+         <b><span>Proceedings</span></b></span></p>
+		 </span>
+		 <p><span lang="en-us">Proceedings are available on CVF website at:
+		 </span>
+		 <a href="http://openaccess.thecvf.com/CVPR2018_workshops/CVPR2018_W42.py">
+		 http://openaccess.thecvf.com/CVPR2018_workshops/CVPR2018_W42.py</a><span lang="en-us">
+		           
+      </p>
+		 <p>&nbsp;</p>
+		           
+      <h2 class="auto-style14"><strong>Organizers</strong></h2>
+		 <p class="auto-style14">&nbsp;</p>
+		 <table style="width: 65%; height: 345;" align="center" cellspacing="1" class="auto-style30">
+			 <tr>
+				 <td class="auto-style29" style="width: 15%; height: 340;" valign="top"> 
+				 
+      		     <a href="https://www.linkedin.com/in/jan-ernst-2829965" style="text-decoration: none"> 
+      		     <img alt="" height="156" src="images/Jan.JPG" width="140"><br>
+				 <span class="auto-style13"><br><strong>Jan Ernst</strong><br>&nbsp;Siemens Corporate Technology</span></a></td>
+				 <td class="auto-style29" style="width: 2%; height: 340;" valign="top"> 
+      		     &nbsp;</td>
+      		     
+      		     
+				 <td class="text-center" style="width: 15%; height: 340;" valign="top"> 
+         		     <a href="http://www.wuziyan.com" style="text-decoration: none"> 
+      		     <img alt="" height="156" src="images/Ziyan.JPG" width="140"><br>
+				 	<span class="auto-style13"><br><strong>Ziyan Wu</strong><br>&nbsp;Siemens Corporate Technology</span></a></td>
+				 
+				 
+				 <td class="text-center" style="width: 2%; height: 340;" valign="top"> 
+      		     &nbsp;</td>
+				 <td class="auto-style28" style="height: 340; width: 15%;" valign="top">
+		 		 <a href="https://karanams.github.io/" style="text-decoration: none">
+				 <img alt="" height="156" src="images/Srikrishna.JPG" width="140"><br>
+				 <span class="auto-style13"><br><strong>Srikrishna Karanam<br>
+				 </strong></span></a>
+          
+         <span lang="en-us">
+		           
+      		     
+				 <span class="auto-style13">&nbsp;Siemens Corporate Technology</span></span><span class="auto-style11"><br>&nbsp;</span></td>
+				 <td class="auto-style28" style="height: 340; width: 2%;" valign="top">
+		 		 &nbsp;</td>
+				 <td class="auto-style28" style="height: 340; width: 15%;" valign="top">
+		 		 <span class="auto-style13"><span lang="en-us">
+		           
+      		   <a href="http://chenlab.ece.cornell.edu/people/kuanchuan/" style="text-decoration: none"> 
+      		     <img alt="" height="156" src="images/KC.JPG" width="140" align="top"><br>
+				 <br><span class="auto-style13" lang="en-us"><strong>Kuan-Chuan 
+				 Peng</strong></span><br>
+				 <span class="auto-style13" lang="en-us">Siemens Corporate 
+				 Technology</span></a></span><br>&nbsp;</span></td>
+			 </tr>
+		 </table>
+		 <p class="auto-style14">&nbsp;</p>
+		 <p class="auto-style14">&nbsp;</p>
+		 <p><span lang="en-us">
+		 <table style="width: 100%">
+			 <tr>
+				 <td> 
+      		   &nbsp;</td>
+				 <td class="auto-style12">
+		 <img alt="" height="126" src="images/sie-logo-layer-claim-petrol-rgb.png" width="300" style="float: right"></td>
+			 </tr>
+		 </table>
+		 </span></p>
+	  </div>
+	  <span class="auto-style12">
+		<br>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="section footer">
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="col-md-12">
+        <p class="text-center">&copy; 2018 All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer --> 
+
+<!-- JS FILES --> 
+
+</body>
+</html>
